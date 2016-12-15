@@ -1,18 +1,18 @@
 {
-"name":"sparknotesTest",
-"description":"Hides distracting \"Take a study break!\" and \"From the B&N Book Blog\"",
-"version":"1",
+"name":"Sparknotes - No Study Breaks",
+"description":"Hides distracting \"Take a study break!\" and \"From the B&N Book Blog\" in the sidebar.",
+"version":"1.0.0",
 "manifest_version":2,
 
 "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html",
-    "default_title": "Sparknotes Test"
+    "default_title": "Sparknotes - No Study Breaks"
   },
 
 "content_scripts": [
     {
-      "matches": ["http://www.sparknotes.com/lit/*","https://www.sparknotes.com/lit/*"],
+      "matches": ["http://www.sparknotes.com/*","https://www.sparknotes.com/*"],
       "js": ["hide.js"],
       "run_at": "document_end"
     }
